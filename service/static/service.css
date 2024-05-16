@@ -1,0 +1,1027 @@
+/* Import de la police Roboto */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+/* Style global pour le corps de la page */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Utilisation de la police Roboto */
+    
+    padding-top: 100px; /* Ajustez la distance vide en haut selon vos besoins */
+}
+
+
+  
+  
+video {
+    filter: blur(1px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    z-index: -1; /* Placez la vidéo derrière le contenu de la page */
+    object-fit: cover; /* Redimensionner la vidéo pour remplir le conteneur */
+    background-color: #2f3293; /* Filtre de couleur */
+}
+
+
+.menu-bar {
+    background-color: #2f3293;
+    width: 100%;
+    position: fixed; /* Position fixe pour maintenir en haut */
+    top: 0; /* Aligner en haut de la page */
+    left: 0; /* Aligner à gauche de la page */
+    z-index: 1000; /* Assure que la barre de menu reste au-dessus du contenu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    box-sizing: border-box;
+}
+
+.menu-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar ul li {
+    margin-left: 0px;
+}
+
+.menu-bar ul li:first-child {
+    margin-left: 0;
+}
+
+.menu-bar ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 15px; /*   */
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.menu-bar ul li a:hover {
+    color: #2f3293;
+}
+
+.menu-bar ul li a:hover::before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.menu-bar ul li a::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: #ffffff;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.menu-bar ul li a:hover::after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.logo img {
+    max-height: 48px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 0px; /* Espacement entre les éléments du menu */
+}
+
+.menu li:first-child {
+    margin-left: 0;
+    margin-right: 0px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.tableau-user {
+    text-align: left; /* Aligner le contenu à gauche */
+    width: 100px; /* Largeur fixe du tableau */
+    min-width: 900px; /* Largeur minimale */
+    padding: 15px; /* Espacement à l'intérieur de l'élément */
+    background-color: #e5e1f896; /* Couleur de fond */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0px 2px 5px rgba(255, 251, 251, 0.1); /* Ombre */
+    transition: all 0.3s; /* Transition fluide */
+    margin: 0 auto; /* Pour centrer horizontalement */
+    margin-top: 50px; /* Espacement par rapport au haut de la page */
+    margin-bottom: 20px; /* Marge inférieure */
+    position: relative; /* Ajout de la propriété position */
+    top: -20px; /* Ajustez la position verticale selon vos besoins */
+    display: flex; /* Pour utiliser un affichage en ligne (flexible) */
+    flex-direction: column; /* Aligner les éléments en colonne */
+
+    align-items: center; /* Aligner les éléments verticalement */
+
+}
+
+
+.tableau-user h2 {
+    margin: 0 auto;
+    color: #2f3293; /* Changer la couleur du titre en bleu */
+    font-weight: bold; /* Mettre le titre en gras */
+    text-align: center; /* Centrer le texte */
+    width: 100%; /* Largeur maximale du titre */
+}
+
+
+
+
+.logo_page {
+    
+    position: relative; /* Permet de positionner l'image de manière absolue par rapport à ce conteneur */
+
+    height: auto; /* Conservez les proportions de l'image */
+    margin-right: 20px; /* Espacement entre le logo et le texte */
+
+}
+
+.logo_page img {
+    width: 150px; /* Largeur de l'image */
+    height: auto; /* Hauteur de l'image ajustée proportionnellement */
+}
+
+
+.logo-and-text {
+    display: flex; /* Utilisation de la flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Aligner les éléments verticalement */
+}
+
+.text-content {
+    flex-grow: 1; /* Permet au texte de prendre tout l'espace disponible */
+    text-align: justify; /* Justifier le texte */
+
+}
+
+
+
+
+
+
+
+.footer-bar {
+    display: flex; /* Ajout de flexbox */
+    justify-content: space-between; /* Pour séparer les éléments si nécessaire */
+    background-color: #2f3293; /* Couleur de fond de la bande */
+    width: 100%; /* Largeur totale de la bande */
+    position: fixed; /* Position fixe pour rester en bas de la page */
+    bottom: 0; /* Alignement en bas */
+    left: 0; /* Alignement à gauche */
+    z-index: 1000; /* Assure que la bande reste au-dessus du contenu */
+    display: flex; /* Utilisation de la flexbox pour aligner les éléments horizontalement */
+    justify-content: space-between; /* Espace uniformément les éléments */
+    align-items: center; /* Aligner verticalement les éléments */
+    padding: 8px 15px; /* Espacement interne de la bande */
+    box-sizing: border-box; /* Inclure les bordures et les rembourrages dans la largeur et la hauteur */
+}
+
+.footer-menu ul {
+    display: flex; /* Utilisation de la flexbox pour aligner les éléments horizontalement */
+    list-style: none; /* Supprimer les puces de la liste */
+    margin: 0; /* Supprimer les marges extérieures */
+    padding: 0; /* Supprimer les remplissages intérieurs */
+}
+
+.footer-menu ul li {
+    margin-left: 10px; /* Espacement entre les éléments du menu */
+}
+
+.footer-menu ul li:first-child {
+    justify-content: center;
+
+}
+
+.footer-menu ul li a {
+
+    text-decoration: none; /* Supprimer les soulignements des liens */
+    color: #ffffff; /* Couleur du texte */
+    font-weight: bold; /* Gras */
+    padding: 10px 20px; /* Espacement interne des liens */
+    transition: 0.5s; /* Effet de transition */
+}
+
+.footer-menu ul li a:hover {
+    justify-content: center;
+
+    color: #2f3293; /* Couleur du texte au survol */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tableau-user2 {
+    text-align: left; /* Aligner le contenu à gauche */
+    width: 100px; /* Largeur fixe du tableau */
+    min-width: 900px; /* Largeur minimale */
+    padding: 15px; /* Espacement à l'intérieur de l'élément */
+    background-color: #e5e1f896; /* Couleur de fond */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0px 2px 5px rgba(255, 251, 251, 0.1); /* Ombre */
+    transition: all 0.3s; /* Transition fluide */
+    margin: 0 auto; /* Pour centrer horizontalement */
+    margin-top: 50px; /* Espacement par rapport au haut de la page */
+    margin-bottom: 20px; /* Marge inférieure */
+    position: relative; /* Ajout de la propriété position */
+    top: -20px; /* Ajustez la position verticale selon vos besoins */
+    display: flex; /* Pour utiliser un affichage en ligne (flexible) */
+    flex-direction: column; /* Aligner les éléments en colonne */
+
+    align-items: center; /* Aligner les éléments verticalement */
+
+}
+
+
+.tableau-user2:hover {
+    transform: translateY(-5px); /* Animation de survol */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+}
+
+
+.tableau-user:hover {
+    transform: translateY(-5px); /* Animation de survol */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+}
+
+
+
+.tableau-user h2 {
+    margin: 0 auto;
+    color: #2f3293; /* Changer la couleur du titre en bleu */
+    font-weight: bold; /* Mettre le titre en gras */
+    text-align: center; /* Centrer le texte */
+    width: 100%; /* Largeur maximale du titre */
+}
+
+
+
+
+
+
+.card {
+    width: 250px;
+    height: 150px;
+    perspective: 1000px;
+    position: absolute;
+    top: 550px;
+    left: 100px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    
+  }
+  
+  .card-front {
+    font-weight: bold; /* Ajout de la propriété pour mettre le texte en gras */
+
+    background-color: #6FB1FC;
+    color: #2f3293;
+    display: flex;
+    align-items: center;
+    border: 10px solid #6FB1FC;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+  
+
+
+
+
+
+  .card2 {
+    width: 250px;
+    height: 150px;
+    perspective: 1000px;
+    position: absolute;
+    top: 550px;
+    left: 550px;
+  }
+  
+  .card-inner2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card2:hover .card-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front2,
+  .card-back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    
+  }
+  
+  .card-front2 {
+    font-weight: bold; /* Ajout de la propriété pour mettre le texte en gras */
+
+    background-color: #6FB1FC;
+    color: #2f3293;
+    display: flex;
+    align-items: center;
+    border: 10px solid #6FB1FC;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back2 {
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .card3 {
+    width: 250px;
+    height: 150px;
+    perspective: 1000px;
+    position: absolute;
+    top: 550px;
+    left: 1000px;
+  }
+  
+  .card-inner3 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card3:hover .card-inner3 {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front3,
+  .card-back3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    
+  }
+  
+  .card-front3 {
+    font-weight: bold; /* Ajout de la propriété pour mettre le texte en gras */
+
+    background-color: #6FB1FC;
+    color: #2f3293;
+    display: flex;
+    align-items: center;
+    border: 10px solid #6FB1FC;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back3 {
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+.logo_page {
+    
+    position: relative; /* Permet de positionner l'image de manière absolue par rapport à ce conteneur */
+
+    height: auto; /* Conservez les proportions de l'image */
+    margin-right: 20px; /* Espacement entre le logo et le texte */
+
+}
+
+.logo_page img {
+    width: 150px; /* Largeur de l'image */
+    height: auto; /* Hauteur de l'image ajustée proportionnellement */
+}
+
+
+.logo-and-text {
+    display: flex; /* Utilisation de la flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Aligner les éléments verticalement */
+}
+
+.text-content {
+    flex-grow: 1; /* Permet au texte de prendre tout l'espace disponible */
+    text-align: justify; /* Justifier le texte */
+
+}
+
+
+.content {
+    overflow: hidden; /* Cela désactivera le défilement */
+}
+
+
+
+
+
+.social-media {
+    margin-left: auto; /* Pour aligner à droite */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+  
+.socail-media li a {
+    
+    width: 15px;
+    height: 15px;
+    background-color: #2f3293;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+    border: 1px solid #ffffff;
+  }
+  
+  .socail-media li a svg {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    filter: invert(100%) sepia(0%) saturate(7455%) hue-rotate(57deg) brightness(108%) contrast(105%);
+  }
+  
+  .socail-media li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+    background-color: #fff;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    
+  }
+  
+  .socail-media li a:hover::after {
+    animation: sideClip 0.3s linear;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+  }
+  
+  .socail-media li a:hover svg {
+    animation: fadeInLeft 0.3s linear both;
+    filter: invert(38%) sepia(3%) saturate(100%) hue-rotate(100deg) brightness(108%) contrast(100%);
+}
+  
+  
+
+
+
+
+  
+
+.footer-bar h4 {
+  position: absolute; /* Position absolue pour sortir du flux normal */
+  top: -10%; /* Positionne le haut de l'élément au milieu de .footer-bar */
+  left: 50%; /* Positionne la gauche de l'élément au milieu de .footer-bar */
+  transform: translate(-50%, -50%); /* Pour centrer l'élément horizontalement et verticalement */
+  color: #ffffff; /* Couleur du texte en blanc */
+}
+
+
+
+  
+.Service {
+    position: absolute;
+    top: 65%; /* Définit la position verticale au centre */
+    left: 50%; /* Définit la position horizontale au centre */
+    transform: translate(-50%, -50%); /* Centre l'élément par rapport à son propre contenu */
+    padding: 10px;
+    color: #2f3293; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 40px; /* Taille du texte */
+
+}
+
+.Service h5 {
+    margin: 0;
+}
+
+
+
+
+
+.tableau-user {
+  text-align: center;
+  width: calc(30% - 10px); /* Largeur du tableau, ajustez selon vos besoins */
+  min-width: 150px; /* Largeur minimale */
+  padding: 15px; /* Espacement à l'intérieur de l'élément */
+  background-color: #e5e1f896; /* Couleur de fond */
+  border-radius: 5px; /* Coins arrondis */
+  box-shadow: 0px 2px 5px rgba(255, 251, 251, 0.1); /* Ombre */
+  transition: all 0.3s; /* Transition fluide */
+  margin: 0 auto; /* Pour centrer horizontalement */
+  margin-top: 50px; /* Espacement par rapport au haut de la page */
+  margin-bottom: 20px; /* Marge inférieure */
+
+  
+  position: relative; /* Ajout de la propriété position */
+  top: -40px; /* Ajustez la position verticale selon vos besoins */
+}
+
+
+.tableau-user h2 {
+  margin: 0 auto;
+  color : #2f3293; /* Changer la couleur du titre en bleu */
+  font-weight: bold; /* Mettre le titre en gras */
+  text-align: center; /* Centrer le texte */
+  width: 100%; /* Largeur maximale du titre */
+}
+
+.firstname {
+  width: 330px;
+  height: 20px;
+  max-width: none;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  margin: 0 auto;
+}
+
+.firstname:focus {
+  border: 1.5px solid rgb(17, 0, 255);
+}
+
+.phoneNumber {
+  width: 330px; /* Largeur du champ de saisie */
+  height: 20px; /* Hauteur du champ de saisie */
+  max-width: none; /* Annulation de la largeur maximale */
+  padding: 12px; /* Espacement intérieur */
+  border-radius: 12px; /* Rayon de bordure */
+  border: 1.5px solid lightgrey; /* Couleur et épaisseur de la bordure */
+  outline: none; /* Suppression de la bordure lors du focus */
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1); /* Animation de transition pour tous les changements */
+  margin: 0 auto; /* Centrage horizontal */
+}
+
+.phoneNumber:focus {
+  border: 1.5px solid rgb(17, 0, 255); /* Couleur de la bordure lorsqu'il est en focus */
+}
+
+
+
+
+
+
+
+
+
+.dateInput {
+  width: 330px; /* Augmentation de la largeur pour une meilleure lisibilité */
+  height: 20px; /* Ajustement de la hauteur */
+  padding: 12px; /* Réduction de l'espacement intérieur */
+  border-radius: 12px; /* Légère réduction du rayon de bordure */
+  border: 1.5px solid lightgrey; /* Augmentation de l'épaisseur de la bordure */
+  outline: none;
+  transition: border-color 0.3s ease; /* Transition plus fluide pour le changement de couleur de bordure */
+  margin: 0 auto;
+}
+
+.dateInput::placeholder {
+  color: #999; /* Couleur du texte de l'indicateur de saisie */
+}
+
+.dateInput:focus {
+  border-color: dodgerblue; /* Couleur de la bordure lorsqu'il est en focus */
+}
+
+
+
+
+.location {
+  width: 330px; /* Largeur du champ de saisie */
+  height: 20px; /* Hauteur du champ de saisie */
+  padding: 12px; /* Espacement intérieur */
+  border-radius: 12px; /* Rayon de bordure */
+  border: 1.5px solid lightgrey; /* Couleur et épaisseur de la bordure */
+  outline: none; /* Suppression de la bordure lors du focus */
+  transition: border-color 0.3s ease; /* Animation de transition pour la couleur de la bordure */
+}
+
+.location::placeholder {
+  color: #999; /* Couleur du texte de l'indicateur de saisie */
+}
+
+.location:focus {
+  border-color: dodgerblue; /* Couleur de la bordure lorsqu'il est en focus */
+}
+
+
+
+
+
+.username {
+  width: 330px;
+  height: 20px;
+  max-width: none;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  margin: 0 auto;
+}
+
+.username:focus {
+  border: 1.5px solid rgb(17, 0, 255);
+}
+
+
+.email {
+  width: 330px;
+  height: 20px;
+  max-width: none;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  margin: 0 auto;
+}
+
+.email:focus {
+  border: 1.5px solid rgb(17, 0, 255);
+}
+
+
+
+
+.button-container {
+  white-space: nowrap; /* Empêcher le saut de ligne */
+
+}
+
+.bouton_ajouter, .bouton_annuler {
+background-color: #2f3293; /* couleur bleue par défaut */
+color: white;
+border: none;
+padding: 10px 40px;
+text-align: center;
+text-decoration: none;
+display: inline-block; /* afficher les boutons sur la même ligne */
+font-size: 16px;
+cursor: pointer;
+border-radius: 15px;
+margin-right: 1px; /* Marge entre les boutons */
+
+}
+
+
+.bouton_ajouter:hover {
+background-color:#2f3293; /* couleur bleue foncée au survol */
+color: white; /* Changer la couleur du texte */
+}
+
+
+.bouton_ajouter {
+  position: relative; /* Définir la position relative pour utiliser les propriétés top, right, bottom, left */
+  right: 10px; /* Déplacer le bouton de 10 pixels vers la droite */
+}
+
+
+
+/* Style pour le champ de sélection */
+select {
+  width: 100%; /* Prendre la largeur de son conteneur */
+  padding: 12px; /* Ajouter un rembourrage */
+  border-radius: 12px; /* Ajouter des coins arrondis */
+  border: 1px solid #ccc; /* Ajouter une bordure grise */
+  box-sizing: border-box; /* Inclure le rembourrage et la bordure dans la largeur totale */
+  font-size: 16px; /* Définir la taille de la police */
+
+}
+select:focus {
+  border: 1.5px solid rgb(17, 0, 255);
+}
+
+
+
+
+
+
+
+
+
+
+.cbx {
+  -webkit-perspective: 20;
+  perspective: 20;
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  margin: -12px;
+  border: 2px solid #e8e8eb;
+  background: #e8e8eb;
+  border-radius: 4px;
+  transform: translate3d(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cbx:hover {
+  border-color: #0b76ef;
+}
+
+.flip {
+  display: block;
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+#cbx {
+  display: none;
+}
+
+#cbx:checked + .cbx {
+  border-color: #0b76ef;
+}
+
+#cbx:checked + .flip {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.front {
+  background: #fff;
+  z-index: 1;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background: #0b76ef;
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+  box-shadow: 0 0 0 1px #0b76ef;
+}
+
+.back svg {
+  margin-top: 3px;
+  fill: none;
+}
+
+.back svg path {
+  stroke: #fff;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+.import {
+  font-size: 20px; /* Taille de la police */
+  position: relative; /* Utilisation d'une position relative */
+  top: 0px; /* Déplacement de 20 pixels vers le bas */
+  left: -80px; /* Déplacement de 30 pixels vers la droite */
+  /* Autres styles CSS selon vos besoins */
+}
+
+
+
+
+.export {
+  font-size: 20px; /* Taille de la police */
+  position: relative; /* Utilisation d'une position relative */
+  top: 0px; /* Déplacement de 20 pixels vers le bas */
+  left: 10px; /* Déplacement de 30 pixels vers la droite */
+  /* Autres styles CSS selon vos besoins */
+}
+
+
+
+
+
+
+
+.cbx1 {
+  -webkit-perspective: 20;
+  perspective: 20;
+  position: absolute;
+  top: 65%;
+  left: 80%;
+  margin: -12px;
+  border: 2px solid #e8e8eb;
+  background: #e8e8eb;
+  border-radius: 4px;
+  transform: translate3d(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cbx1:hover {
+  border-color: #0b76ef;
+}
+
+.flip1 {
+  display: block;
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+#cbx1 {
+  display: none;
+}
+
+#cbx1:checked + .cbx1 {
+  border-color: #0b76ef;
+}
+
+#cbx1:checked + .flip1 {
+  transform: rotateY(180deg);
+}
+
+.front1,
+.back1 {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.front1 {
+  background: #fff;
+  z-index: 1;
+}
+
+.back1 {
+  transform: rotateY(180deg);
+  background: #0b76ef;
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+  box-shadow: 0 0 0 1px #0b76ef;
+}
+
+.back1 svg {
+  margin-top: 3px;
+  fill: none;
+}
+
+.back1 svg path {
+  stroke: #fff;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 123, 255, 0.7);
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  display: none;
+}
+

@@ -1,0 +1,248 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>service</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'service.css' %}">
+  <link rel="icon" type="image/png" href="{% static 'logoo.png' %}">
+</head>
+<body>
+
+  <video autoplay muted loop id="video-background">
+    <source src="{% static '/videoo3.mp4' %}" type="video/mp4">
+    <!-- Ajoutez des balises <source> supplémentaires pour d'autres formats de vidéo -->
+  </video>
+
+
+
+
+
+<header class="menu-bar">
+  <div class="logo">
+    <img src="/static/logo.png" alt="coficab Logo" id="logo">
+  </div>
+
+ 
+
+  <nav class="menu">
+    <ul>
+      <li><a href="{% url 'accueil' %}">accueil</a></li>
+      <li><a href="{% url 'service' %}">service</a></li>
+      <li><a href="https://www.marinetraffic.com/en/ais/home/centerx:10.5/centery:36.4/zoom:7?fbclid=IwZXh0bgNhZW0CMTAAAR0uOSpbEsMDrvSgQtNzv0foVtH03dTVSj8Z9aA6i6YwlbiusjdYc7ASs2Y_aem_AfveXYK7krSJ2mgRMoKrMwAjv1d8KrzSQ90z9a822uZ2DTjE3Z7f1DUTR2GI2QafbDwF_yWhpEcHQXmDQhr7xwD8">Tracking</a></li>
+
+      <li><a href="{% url 'contact' %}">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tableau-user">
+  <h2>Formulaire</h2>
+ 
+  <form method="post">
+      {% csrf_token %}
+      <div class="form">
+          <p>
+              <label for="id_first_name"></label>
+              <input type="text" name="first_name" maxlength="30" required id="id_first_name" class="firstname" placeholder="Nom d'entreprise">
+          
+              
+          </p>
+          <p>
+              <label for="id_username"></label>
+              <input type="text" name="username" maxlength="150" id="id_username" class="username" placeholder="Secteur D'activité">
+          </p>
+          <p>
+              <label for="id_email"></label>
+              <input type="email" name="email" maxlength="254" id="id_email" class="email" placeholder="Adresse e-mail">
+          </p>
+          <p>
+            <label for="id_phone_number"></label>
+            <input type="tel" name="phone_number" maxlength="15" required id="id_phone_number" class="phoneNumber" placeholder="Numéro de téléphone">
+          </p>
+          
+          <p>
+            <label for="id_groups"></label>
+            <select name="groups" id="id_groups" class="form-control groups">
+                <option value="" disabled selected>Choisissez un service</option>
+                <option value="import">Transport Aérien</option>
+                <option value="export">Transport Maritime</option>
+                <option value="autre">Transport Terrestre</option>
+            </select>
+        </p>
+        
+
+        <h20 class="import">IMPORT</h20>
+
+
+
+
+
+        <label for="cbx" class="cbx">
+          <div class="checkmark">
+          <input type="checkbox" id="cbx">
+          <div class="flip">
+            <div class="front"></div>
+              <div class="back">
+                <svg viewBox="0 0 16 14" height="14" width="16">
+                  <path d="M2 8.5L6 12.5L14 1.5"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </label>
+
+
+
+
+        <h30 class="export">EXPORT</h30>
+
+        <label for="cbx1" class="cbx1">
+          <div class="checkmark1">
+          <input  type="checkbox" id="cbx1">
+          <div class="flip1">
+            <div class="front1"></div>
+              <div class="back1">
+                <svg viewBox="0 0 16 14" height="14" width="16">
+                  <path d="M2 8.5L6 12.5L14 1.5"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </label>
+
+
+
+
+
+
+
+
+
+
+          <p>
+            <label for="id_date"></label>
+            <input type="date" name="date" id="id_date" class="dateInput" placeholder="Date">
+          </p>
+
+          <p>
+            <label for="id_location"></label>
+            <input type="text" name="location" id="id_location" class="location" placeholder="Lieu de rendez-vous
+            ">
+          </p>
+          
+          <div class="button-container">
+              
+
+              <button type="submit" class="bouton_ajouter">
+                  <span class="button__text">Confirmer</span>
+              </button>
+
+
+
+
+          </div>
+      </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer-bar" id="footerBar">
+  <nav class="footer-menu">
+    <ul>
+      <li><a href="#"></a></li>
+      <!-- Ajoutez d'autres liens ici si nécessaire -->
+    </ul>
+
+    <h4>© Transport Logistics Solution</h4>
+  </nav>
+</footer>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            window.addEventListener("wheel", function(event) {
+                if (event.deltaY > 0) {
+                    window.scrollBy(0, 100); // défilement vers le bas
+                } else {
+                    window.scrollBy(0, -100); // défilement vers le haut
+                }
+            });
+        });
+
+      
+        window.addEventListener('scroll', function() {
+            var footerBar = document.getElementById('footerBar');
+            var scrollPosition = window.scrollY + window.innerHeight;
+            var pageHeight = document.body.scrollHeight;
+
+            // Afficher la barre de pied de page lorsque la position de défilement atteint la fin de la page
+            if (scrollPosition >= pageHeight) {
+                footerBar.style.display = 'block';
+            } else {
+                footerBar.style.display = 'none';
+            }
+        });
+   
+
+
+       
+
+
+
+    </script>
+
+
+
+</body>
+</html>
+.

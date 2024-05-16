@@ -1,0 +1,1253 @@
+/* Import de la police Roboto */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+/* Style global pour le corps de la page */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Utilisation de la police Roboto */
+    
+    padding-top: 100px; /* Ajustez la distance vide en haut selon vos besoins */
+}
+
+
+  
+  
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    z-index: -1; /* Placez la vidéo derrière le contenu de la page */
+    object-fit: cover; /* Redimensionner la vidéo pour remplir le conteneur */
+}
+
+
+
+
+
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 118%;
+    z-index: -2; /* Assure que le container est derrière les autres éléments */
+    background-color: transparent;
+    background-image: radial-gradient(#000000 1px, #d6d6e0a8 1px);
+    background-size: 35px 35px;
+  }
+
+
+
+
+  .container1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 225%;
+    z-index: -3; /* Assure que le container est derrière les autres éléments */
+    background-color: transparent;
+    background-image: radial-gradient(#000000 1px, #d6d6e0a8 1px);
+    background-size: 35px 35px;
+  }
+
+
+
+
+  .container2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 310%;
+    z-index: -3; /* Assure que le container est derrière les autres éléments */
+    background-color: transparent;
+    background-image: radial-gradient(#000000 1px, #ffffff28 1px);
+    background-size: 35px 35px;
+  }
+
+
+
+
+.menu-bar {
+    background-color: #2f3293;
+    width: 100%;
+    position: fixed; /* Position fixe pour maintenir en haut */
+    top: 0; /* Aligner en haut de la page */
+    left: 0; /* Aligner à gauche de la page */
+    z-index: 1000; /* Assure que la barre de menu reste au-dessus du contenu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    box-sizing: border-box;
+}
+
+.menu-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar ul li {
+    margin-left: 0px;
+}
+
+.menu-bar ul li:first-child {
+    margin-left: 0;
+}
+
+.menu-bar ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 15px; /*   */
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.menu-bar ul li a:hover {
+    color: #2f3293;
+}
+
+.menu-bar ul li a:hover::before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.menu-bar ul li a::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: #ffffff;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.menu-bar ul li a:hover::after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.logo img {
+    max-height: 48px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 0px; /* Espacement entre les éléments du menu */
+}
+
+.menu li:first-child {
+    margin-left: 0;
+    margin-right: 0px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.tableau-user {
+    text-align: left; /* Aligner le contenu à gauche */
+    width: 100px; /* Largeur fixe du tableau */
+    min-width: 900px; /* Largeur minimale */
+    padding: 15px; /* Espacement à l'intérieur de l'élément */
+    background-color: #efecfc00; /* Couleur de fond */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0px 2px 5px rgba(255, 251, 251, 0.171); /* Ombre */
+    transition: all 0.3s; /* Transition fluide */
+    margin: 0 auto; /* Pour centrer horizontalement */
+    margin-top: 50px; /* Espacement par rapport au haut de la page */
+    margin-bottom: 20px; /* Marge inférieure */
+    position: relative; /* Ajout de la propriété position */
+    top: 300px; /* Ajustez la position verticale selon vos besoins */
+    display: flex; /* Pour utiliser un affichage en ligne (flexible) */
+    flex-direction: column; /* Aligner les éléments en colonne */
+
+    align-items: center; /* Aligner les éléments verticalement */
+
+}
+
+
+.tableau-user h2 {
+    margin: 0 auto;
+    color: #2f3293; /* Changer la couleur du titre en bleu */
+    font-weight: bold; /* Mettre le titre en gras */
+    text-align: center; /* Centrer le texte */
+    width: 100%; /* Largeur maximale du titre */
+    font-size: 35px; /* Changer la taille de la police */
+
+  }
+
+
+
+
+.logo_page {
+    
+    position: relative; /* Permet de positionner l'image de manière absolue par rapport à ce conteneur */
+
+    height: auto; /* Conservez les proportions de l'image */
+    margin-right: 20px; /* Espacement entre le logo et le texte */
+
+}
+
+.logo_page img {
+    width: 150px; /* Largeur de l'image */
+    height: auto; /* Hauteur de l'image ajustée proportionnellement */
+}
+
+
+.logo-and-text {
+    display: flex; /* Utilisation de la flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Aligner les éléments verticalement */
+}
+
+.text-content {
+    flex-grow: 1; /* Permet au texte de prendre tout l'espace disponible */
+    text-align: justify; /* Justifier le texte */
+
+}
+
+
+
+
+
+
+
+.footer-bar {
+    display: flex; /* Ajout de flexbox */
+    justify-content: space-between; /* Pour séparer les éléments si nécessaire */
+    background-color: #2f3293; /* Couleur de fond de la bande */
+    width: 100%; /* Largeur totale de la bande */
+    position: fixed; /* Position fixe pour rester en bas de la page */
+    bottom: 0; /* Alignement en bas */
+    left: 0; /* Alignement à gauche */
+    z-index: 1000; /* Assure que la bande reste au-dessus du contenu */
+    display: flex; /* Utilisation de la flexbox pour aligner les éléments horizontalement */
+    justify-content: space-between; /* Espace uniformément les éléments */
+    align-items: center; /* Aligner verticalement les éléments */
+    padding: 8px 15px; /* Espacement interne de la bande */
+    box-sizing: border-box; /* Inclure les bordures et les rembourrages dans la largeur et la hauteur */
+}
+
+.footer-menu ul {
+    display: flex; /* Utilisation de la flexbox pour aligner les éléments horizontalement */
+    list-style: none; /* Supprimer les puces de la liste */
+    margin: 0; /* Supprimer les marges extérieures */
+    padding: 0; /* Supprimer les remplissages intérieurs */
+}
+
+.footer-menu ul li {
+    margin-left: 10px; /* Espacement entre les éléments du menu */
+}
+
+.footer-menu ul li:first-child {
+    justify-content: center;
+
+}
+
+.footer-menu ul li a {
+
+    text-decoration: none; /* Supprimer les soulignements des liens */
+    color: #ffffff; /* Couleur du texte */
+    font-weight: bold; /* Gras */
+    padding: 10px 20px; /* Espacement interne des liens */
+    transition: 0.5s; /* Effet de transition */
+}
+
+.footer-menu ul li a:hover {
+    justify-content: center;
+
+    color: #2f3293; /* Couleur du texte au survol */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    width: 250px;
+    height: 150px;
+    perspective: 1000px;
+    position: absolute;
+    top: 880px;
+    left: 90px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+  }
+  
+  .card-front {
+    font-weight: bold; /* Ajout de la propriété pour mettre le texte en gras */
+
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+.card-back {
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+    
+  }
+  
+
+
+
+
+
+  .card-front p {
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 20px; /* Ajustement de la taille de police */
+  }
+  
+  
+  .card-back p {
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 15px; /* Ajustement de la taille de police */
+    
+  }
+
+
+
+  .card2 {
+    width: 250px;
+    height: 150px;
+    perspective: 1000px;
+    position: absolute;
+    top: 880px;
+    left: 520px;
+  }
+  
+  .card-inner2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card2:hover .card-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front2,
+  .card-back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    
+  }
+  
+  .card-front2 {
+    font-weight: bold; /* Ajout de la propriété pour mettre le texte en gras */
+
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back2 {
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+    
+  }
+
+
+
+
+
+  .card-front2 p {
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 20px; /* Ajustement de la taille de police */
+  }
+  
+  
+  .card-back2 p {
+    margin: 0 0 20px ; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 15px; /* Ajustement de la taille de police */
+  }
+
+
+
+
+
+  .card3 {
+    width: 250px;
+    height: 150px;
+    perspective: 1000px;
+    position: absolute;
+    top: 880px;
+    left: 950px;
+  }
+  
+  .card-inner3 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card3:hover .card-inner3 {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front3,
+  .card-back3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    
+  }
+  
+  .card-front3 {
+    font-weight: bold; /* Ajout de la propriété pour mettre le texte en gras */
+
+    background-color: #2f3293;
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back3 {
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+
+
+
+  .card-front3 p {
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 20px; /* Ajustement de la taille de police */
+  }
+  
+  
+  .card-back3 p {
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 15px; /* Ajustement de la taille de police */
+  }
+
+
+
+
+
+  
+
+  .card4 {
+    width: 250px;
+    height: 150px;
+    perspective: 1000px;
+    position: absolute;
+    top: 1250px;
+    left: 100px;
+  }
+  
+  .card-inner4 {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card4:hover .card-inner4 {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front4,
+  .card-back4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    
+  }
+  
+  .card-front4 {
+    font-weight: bold; /* Ajout de la propriété pour mettre le texte en gras */
+
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back4 {
+
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 10px; /* Ajustement de la taille de police */
+
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+
+
+  .card-front4 p {
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 20px; /* Ajustement de la taille de police */
+  }
+  
+  
+  .card-back4 p {
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 15px; /* Ajustement de la taille de police */
+  }
+
+
+
+
+
+
+
+  
+  .card5 {
+    width: 250px;
+    height: 150px;
+    perspective: 1000px;
+    position: absolute;
+    top: 1250px;
+    left: 400px;
+  }
+  
+  .card-inner5 {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card5:hover .card-inner5 {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front5,
+  .card-back5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    
+  }
+  
+  .card-front5 {
+    font-weight: bold; /* Ajout de la propriété pour mettre le texte en gras */
+
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back5 {
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+
+
+  .card-front5 p {
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 20px; /* Ajustement de la taille de police */
+  }
+  
+  
+  .card-back5 p {
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 15px; /* Ajustement de la taille de police */
+  }
+
+  
+
+  .card-front6 p {
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 20px; /* Ajustement de la taille de police */
+  }
+  
+  
+  .card-back6 p {
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 15px; /* Ajustement de la taille de police */
+  }
+
+  
+
+  .card-front7 p {
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 20px; /* Ajustement de la taille de police */
+  }
+  
+  
+  .card-back7 p {
+    margin: 0; /* Pour enlever la marge par défaut du paragraphe */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    font-size: 15px; /* Ajustement de la taille de police */
+  }
+
+
+
+
+
+
+  .card6 {
+    width: 250px;
+    height: 150px;
+    perspective: 1000px;
+    position: absolute;
+    top: 1250px;
+    left: 700px;
+  }
+  
+  .card-inner6 {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card6:hover .card-inner6 {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front6,
+  .card-back6 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    
+  }
+  
+  .card-front6 {
+    font-weight: bold; /* Ajout de la propriété pour mettre le texte en gras */
+
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back6 {
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .card7 {
+    width: 250px;
+    height: 150px;
+    perspective: 1000px;
+    position: absolute;
+    top: 1250px;
+    left: 1000px;
+  }
+  
+  .card-inner7 {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card7:hover .card-inner7 {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front7,
+  .card-back7 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+    
+  }
+  
+  .card-front7 {
+    font-weight: bold; /* Ajout de la propriété pour mettre le texte en gras */
+
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back7 {
+    background-color: #2f3293;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #2f3293;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+.logo_page {
+    
+    position: relative; /* Permet de positionner l'image de manière absolue par rapport à ce conteneur */
+
+    height: auto; /* Conservez les proportions de l'image */
+    margin-right: 20px; /* Espacement entre le logo et le texte */
+
+}
+
+.logo_page img {
+    width: 150px; /* Largeur de l'image */
+    height: auto; /* Hauteur de l'image ajustée proportionnellement */
+}
+
+
+.logo-and-text {
+    display: flex; /* Utilisation de la flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Aligner les éléments verticalement */
+}
+
+.text-content {
+    flex-grow: 1; /* Permet au texte de prendre tout l'espace disponible */
+    text-align: justify; /* Justifier le texte */
+
+}
+
+
+.content {
+    overflow: hidden; /* Cela désactivera le défilement */
+}
+
+
+
+
+
+.social-media {
+    margin-left: auto; /* Pour aligner à droite */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+  
+.socail-media li a {
+    
+    width: 15px;
+    height: 15px;
+    background-color: #2f3293;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+    border: 1px solid #ffffff;
+  }
+  
+  .socail-media li a svg {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    filter: invert(100%) sepia(0%) saturate(7455%) hue-rotate(57deg) brightness(108%) contrast(105%);
+  }
+  
+  .socail-media li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+    background-color: #fff;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    
+  }
+  
+  .socail-media li a:hover::after {
+    animation: sideClip 0.3s linear;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+  }
+  
+  .socail-media li a:hover svg {
+    animation: fadeInLeft 0.3s linear both;
+    filter: invert(38%) sepia(3%) saturate(100%) hue-rotate(100deg) brightness(108%) contrast(100%);
+}
+  
+  
+
+
+
+
+  
+
+.footer-bar h4 {
+  position: absolute; /* Position absolue pour sortir du flux normal */
+  top: -10%; /* Positionne le haut de l'élément au milieu de .footer-bar */
+  left: 50%; /* Positionne la gauche de l'élément au milieu de .footer-bar */
+  transform: translate(-50%, -50%); /* Pour centrer l'élément horizontalement et verticalement */
+  color: #ffffff; /* Couleur du texte en blanc */
+}
+
+
+
+  
+.Service {
+    position: absolute;
+    top: 128%; /* Définit la position verticale au centre */
+    left: 50%; /* Définit la position horizontale au centre */
+    transform: translate(-50%, -50%); /* Centre l'élément par rapport à son propre contenu */
+    padding: 10px;
+    color: #2f3293; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 40px; /* Taille du texte */
+
+}
+
+.Service h5 {
+  font-size: 35px; /* Changer la taille de la police */
+
+    margin: 0;
+}
+
+
+
+ 
+.expertise {
+  position: absolute;
+  top: 175%; /* Définit la position verticale au centre */
+  left: 50%; /* Définit la position horizontale au centre */
+  transform: translate(-50%, -50%); /* Centre l'élément par rapport à son propre contenu */
+  padding: 10px;
+  color: #2f3293; /* Couleur du texte */
+  font-weight: bold; /* Texte en gras */
+  font-size: 40px; /* Taille du texte */
+
+}
+
+.expertise h5 {
+  margin: 0;
+}
+
+
+
+
+
+.button-container {
+  white-space: nowrap; /* Empêcher le saut de ligne */
+  position: relative; /* Définir la position relative pour positionner les boutons à l'intérieur */
+}
+
+.bouton_ajouter {
+  background-color: #ffffff; /* couleur bleue par défaut */
+  color: #2f3293;
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; /* afficher les boutons sur la même ligne */
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-right: 1px; /* Marge entre les boutons */
+  position: absolute; /* Définir la position absolue pour positionner le bouton par rapport à son conteneur */
+  top: 85%; /* Placer le bouton au milieu verticalement */
+  transform: translateY(-50%); /* Ajuster la position verticale */
+  right: 10px; /* Déplacer le bouton de 10 pixels vers la droite */
+}
+
+.bouton_ajouter:hover {
+  background-color: #2f3293; /* couleur bleue foncée au survol */
+  color: white; /* Changer la couleur du texte */
+}
+
+
+
+
+
+.tableau-user1 {
+    text-align: left;
+    width: 100%;
+    min-width: 900px;
+    padding: 5px;
+    background-color: #efecfce1;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(255, 251, 251, 0.171);
+    transition: all 0.3s;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tableau-user1 h2 {
+  font-size: 35px; /* Changer la taille de la police */
+
+    margin: 0 auto;
+    color: #2f3293;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+.logo-and-text1 {
+  display: flex;
+  justify-content: space-between; /* Pour séparer l'image et le texte */
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: row-reverse; /* Inverse l'ordre des éléments */
+}
+
+.logo_page1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.text-content1 h3 {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tableau-user1 {
+  text-align: left; /* Aligner le contenu à gauche */
+  width: 100px; /* Largeur fixe du tableau */
+  min-width: 900px; /* Largeur minimale */
+  padding: 15px; /* Espacement à l'intérieur de l'élément */
+  background-color: #e5e1f800; /* Couleur de fond */
+  border-radius: 5px; /* Coins arrondis */
+  box-shadow: 0px 2px 5px rgba(255, 251, 251, 0.1); /* Ombre */
+  transition: all 0.3s; /* Transition fluide */
+  margin: 0 auto; /* Pour centrer horizontalement */
+  margin-top: 100px; /* Espacement par rapport au haut de la page */
+  margin-bottom: 20px; /* Marge inférieure */
+  position: relative; /* Ajout de la propriété position */
+  top: 995px; /* Ajustez la position verticale selon vos besoins */
+  display: flex; /* Pour utiliser un affichage en ligne (flexible) */
+  flex-direction: column; /* Aligner les éléments en colonne */
+
+  align-items: center; /* Aligner les éléments verticalement */
+
+}
+
+
+.tableau-user1:hover {
+  transform: translateY(-5px); /* Animation de survol */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+}
+
+
+.tableau-user1:hover {
+  transform: translateY(-5px); /* Animation de survol */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+}
+
+
+
+.tableau-user1 h2 {
+  margin: 0 auto;
+  color: #2f3293; /* Changer la couleur du titre en bleu */
+  font-weight: bold; /* Mettre le titre en gras */
+  text-align: center; /* Centrer le texte */
+  width: 100%; /* Largeur maximale du titre */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tableau-user2 {
+  text-align: left; /* Aligner le contenu à gauche */
+  width: 100px; /* Largeur fixe du tableau */
+  min-width: 900px; /* Largeur minimale */
+  padding: 15px; /* Espacement à l'intérieur de l'élément */
+  background-color: #e5e1f800; /* Couleur de fond */
+  border-radius: 5px; /* Coins arrondis */
+  box-shadow: 0px 2px 5px rgba(255, 251, 251, 0.1); /* Ombre */
+  transition: all 0.3s; /* Transition fluide */
+  margin: 0 auto; /* Pour centrer horizontalement */
+  margin-top: 50px; /* Espacement par rapport au haut de la page */
+  margin-bottom: 20px; /* Marge inférieure */
+  position: relative; /* Ajout de la propriété position */
+  top: 995px; /* Ajustez la position verticale selon vos besoins */
+  display: flex; /* Pour utiliser un affichage en ligne (flexible) */
+  flex-direction: column; /* Aligner les éléments en colonne */
+
+  align-items: center; /* Aligner les éléments verticalement */
+
+}
+
+
+.tableau-user2:hover {
+  transform: translateY(-5px); /* Animation de survol */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+}
+
+
+.tableau-user:hover {
+  transform: translateY(-5px); /* Animation de survol */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo_page2 {
+  text-align: center; /* Centrer les images horizontalement */
+}
+
+.logo_page2 img {
+  display: inline-block; /* Afficher les images l'une à côté de l'autre */
+  max-width: 100px; /* Définir la largeur maximale de chaque image */
+  height: auto;
+  border-radius: 20%;
+  margin-right: 20px; /* Ajouter un espace de 20px entre chaque image */
+}
+
+.tableau-user2 h2 {
+
+  font-size: 35px; /* Changer la taille de la police */
+
+  margin: 0 auto;
+  color: #2f3293; /* Changer la couleur du titre en bleu */
+  font-weight: bold; /* Mettre le titre en gras */
+  text-align: center; /* Centrer le texte */
+  width: 100%; /* Largeur maximale du titre */
+
+
+}
+
+
+
+
+

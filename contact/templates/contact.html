@@ -1,0 +1,200 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'contact.css' %}">
+  <link rel="icon" type="image/png" href="{% static 'logoo.png' %}">
+</head>
+<body>
+
+ 
+
+
+  <div class="container"></div>
+
+
+<header class="menu-bar">
+  <div class="logo">
+    <img src="/static/logo.png" alt="coficab Logo" id="logo">
+  </div>
+
+ 
+
+  <nav class="menu">
+    <ul>
+      <li><a href="{% url 'accueil' %}">accueil</a></li>
+      <li><a href="{% url 'service' %}">service</a></li>
+      <li><a href="https://www.marinetraffic.com/en/ais/home/centerx:10.5/centery:36.4/zoom:7?fbclid=IwZXh0bgNhZW0CMTAAAR0uOSpbEsMDrvSgQtNzv0foVtH03dTVSj8Z9aA6i6YwlbiusjdYc7ASs2Y_aem_AfveXYK7krSJ2mgRMoKrMwAjv1d8KrzSQ90z9a822uZ2DTjE3Z7f1DUTR2GI2QafbDwF_yWhpEcHQXmDQhr7xwD8">Tracking</a></li>
+
+      <li><a href="{% url 'contact' %}">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+<!-- <div class="image">
+  <img src="/static/logo1.png" alt="Description de l'image">
+</div>
+ -->
+
+
+
+
+
+
+<div class="card9">
+  <div class="bg">
+    <div class="titre1">
+      <h2>Contact</h2>
+    </div>
+
+    <div class="textee">
+      <p>Adresse : Immeuble Ennasim 1er étage, Montplaisir</p>
+      <p>E-mail : <a href="mailto:Anis_romdhani@tlstunisia.com">Anis_romdhani@tlstunisia.com</a></p>
+      <p>Téléphone : +216 29695475 / +216 71 230 456</p>    
+    </div>
+
+    <a href="https://www.linkedin.com/in/tls-tunisia-969371309/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app&fbclid=IwZXh0bgNhZW0CMTAAAR1aZWx0fqXlTAqQQSupMRFiFBr0IEAlNKeOiyvwacHaIdt4Vres3ayOcJ8_aem_AcHv59hwk_8IoFqwGHJDEy5mzK3r4ikc9IMCmgb3_32aZRRWeozDLFdMqQDKQvBgMla-1uyC2BTu3mf1H0HpmQyW" target="_blank" rel="noopener noreferrer">
+      <button class="Btn">
+        <span class="svgContainer">
+          <svg
+            viewBox="0 0 448 512"
+            height="1.6em"
+            xmlns="http://www.w3.org/2000/svg"
+            class="svgIcon"
+            fill="white"
+          >
+            <path
+              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+            ></path>
+          </svg>
+        </span>
+        <span class="BG"></span>
+      </button>
+    </a>
+    
+
+    
+
+  <img src="{% static '/logo1.png' %}" alt="Description de l'image" class="image-classe">
+
+  <img src="{% static '/adress.png' %}" alt="Description de l'image" class="image-classe1">
+
+  <img src="{% static '/email.png' %}" alt="Description de l'image" class="image-classe2">
+
+  <img src="{% static '/tlf.png' %}" alt="Description de l'image" class="image-classe3">
+
+
+
+
+
+
+  <a href="https://www.instagram.com/tlstunisia/?fbclid=IwZXh0bgNhZW0CMTAAAR2wFFzKg3xRqXMimhJpPdrfRqbGOrJPhJXWPwpaV-nZl2i2fXAgNiJ1Kgk_aem_AcG75lCTQxagzYI_byRoyMuoM1WTNMrZIu6e82Peht9I5zjDAWhobcbhk19HTI1BsgFy9kYTr08RW7gYO0h9pMAP" target="_blank" rel="noopener noreferrer">
+    <button class="Btn2">
+      <span class="svgContainer2">
+        <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+      </span>
+      <span class="BG2"></span>
+    </button>
+  </a>
+  
+
+
+
+
+  <a href="https://www.facebook.com/profile.php?id=61559623799197" target="_blank" rel="noopener noreferrer">
+    <button class="Btn3">
+      <span class="svgContainer3">
+        <svg
+          viewBox="0 0 320 512"
+          height="1.3em"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svgIcon"
+          fill="white"
+        >
+          <path
+            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+          ></path>
+        </svg>
+      </span>
+      <span class="BG3"></span>
+    </button>
+  </a>
+  
+
+
+
+
+
+
+  </div>
+
+  <div class="blob">
+    
+  </div>
+</div>
+
+
+
+<footer class="footer-bar" id="footerBar">
+  <nav class="footer-menu">
+    <ul>
+      <li><a href="#"></a></li>
+      <!-- Ajoutez d'autres liens ici si nécessaire -->
+    </ul>
+
+    <h4>© Transport Logistics Solution</h4>
+  </nav>
+</footer>
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            window.addEventListener("wheel", function(event) {
+                if (event.deltaY > 0) {
+                    window.scrollBy(0, 100); // défilement vers le bas
+                } else {
+                    window.scrollBy(0, -100); // défilement vers le haut
+                }
+            });
+        });
+
+      
+        window.addEventListener('scroll', function() {
+            var footerBar = document.getElementById('footerBar');
+            var scrollPosition = window.scrollY + window.innerHeight;
+            var pageHeight = document.body.scrollHeight;
+
+            // Afficher la barre de pied de page lorsque la position de défilement atteint la fin de la page
+            if (scrollPosition >= pageHeight) {
+                footerBar.style.display = 'block';
+            } else {
+                footerBar.style.display = 'none';
+            }
+        });
+   
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

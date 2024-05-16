@@ -1,0 +1,299 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>accueil</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'accueil.css' %}">
+  <link rel="icon" type="image/png" href="{% static 'logoo.png' %}">
+</head>
+<body>
+
+  
+    <video autoplay muted loop id="video-background">
+      <source src="{% static '/video22.mp4' %}" type="video/mp4">
+      <!-- Ajoutez des balises <source> supplémentaires pour d'autres formats de vidéo -->
+    </video>
+
+
+
+
+  <div class="container"></div>
+  <div class="container1"></div>
+  <div class="container2"></div>
+
+
+
+<header class="menu-bar">
+  <div class="logo">
+    <img src="/static/logo.png" alt="coficab Logo" id="logo">
+  </div>
+
+ 
+
+  <nav class="menu">
+    <ul>
+      <li><a href="{% url 'accueil' %}">accueil</a></li>
+      <li><a href="{% url 'service' %}">service</a></li>
+      <li><a href="https://www.marinetraffic.com/en/ais/home/centerx:10.5/centery:36.4/zoom:7?fbclid=IwZXh0bgNhZW0CMTAAAR0uOSpbEsMDrvSgQtNzv0foVtH03dTVSj8Z9aA6i6YwlbiusjdYc7ASs2Y_aem_AfveXYK7krSJ2mgRMoKrMwAjv1d8KrzSQ90z9a822uZ2DTjE3Z7f1DUTR2GI2QafbDwF_yWhpEcHQXmDQhr7xwD8">Tracking</a></li>
+      <li><a href="{% url 'contact' %}">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<div class="tableau-user">
+  <h2>A propos</h2>
+  <div class="logo-and-text">
+    <div class="logo_page">
+      <img src="{% static '/logo1.png' %}" alt="logo_page"> 
+    </div>
+
+    <div class="text-content">
+      <h3>TLS transport logistic solution , spécialiste du transport international, TRANSPORT LOGISTIC
+        SOLUTION est une entreprise leader avec plus de 150 agents implantés
+        dans le monde entier. Basée à l'Immeuble Ennasim au 1er étage à
+        Montplaisir, elle offre des services de fret sur mesure pour répondre aux
+        besoins de ses clients.
+      </h3>
+
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="Service">
+  <h5>Nos Service </h5>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <!-- Utilisez un lien avec le protocole "app" et l'URI spécifique de votre application -->
+    
+    <a  class="card-front">
+      <p>Transport Aérien</p>
+      
+    </a>
+    <div class="card-back">
+      <!-- <a href="{% url 'service' %}" class="card-front">  -->
+        <p>livraison rapide et sécurisée de vos marchandises à l'internationational via notre réseau de partenaires aèrien</p>
+      </a>
+
+      <!-- <a href="{% url 'service' %}" class="lien-reservation">Réservez votre rendez-vous</a> -->
+      
+      <button type="button" class="bouton_ajouter" onclick="window.location.href = '/service';">
+        <span class="button__text">Réservez votre rendez-vous</span>
+      </button>
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="card2">
+  <div class="card-inner2">
+    <div class="card-front2">
+      <p>Transport Maritime</p>
+    </div>
+    <div class="card-back2">
+      <p>Expéditions économiques par voie maritime sur les principales routes commerciales à travers le globe.</p>
+      <button type="button" class="bouton_ajouter" onclick="window.location.href = '/service';">
+        <span class="button__text">Réservez votre rendez-vous</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div class="card3">
+  <div class="card-inner3">
+    <div class="card-front3">
+      <p>Transport Terrestre</p>
+    </div>
+    <div class="card-back3">
+      <p>Acheminement porte-à-porte de vos colis et lots en Europe et au-delà grâce à notre flotte de véhicules.</p>
+      <button type="button" class="bouton_ajouter" onclick="window.location.href = '/service';">
+        <span class="button__text">Réservez votre rendez-vous</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div class="expertise">
+  <h5>Notre expertise logistique</h5>
+</div>
+
+
+<div class="card4">
+  <div class="card-inner4">
+    <div class="card-front4">
+      <p>Transport international</p>
+    </div>
+    <div class="card-back4">
+      <p>Notre équipe d'experts peuvent vous offrir des 
+        cotations compétitives.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="card5">
+  <div class="card-inner5">
+    <div class="card-front5">
+      <p>Entreposage</p>
+    </div>
+    <div class="card-back5">
+      <p>Nos entrepôts sécurisés permettent le 
+        stockage temporaire de vos marchandises en 
+        toute sérénité.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="card7">
+  <div class="card-inner7">
+    <div class="card-front7">
+      <p>Suivi en temps réel</p>
+    </div>
+    <div class="card-back7">
+      <p>Grâce à notre système de tracking, vous 
+        pouvez suivre la progression de vos envois à 
+        tout moment.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="card6">
+  <div class="card-inner6">
+    <div class="card-front6">
+      <p>Dédouanement</p>
+    </div>
+    <div class="card-back6">
+      <p>Notre équipe d'experts accompagne vos 
+        envois à travers les formalités douanières 
+        partout dans le monde.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="tableau-user1">
+  <h2>Partenaires</h2>
+  <div class="logo-and-text1">
+    <div class="logo_page1">
+      <a href="https://www.facebook.com/mouldi.garbi.3">
+          <img src="{% static '/morris.png' %}" alt="logo_page1"> 
+      </a>
+  </div>
+  
+
+    <div class="text-content1">
+      <h3>
+        Notre partenaire Morris Transport,est  un représentant renommé à l'échelle internationale, notamment sur les marchés asiatique et chinois. Grâce à cette collaboration stratégique, nous sommes en mesure d'offrir à nos clients des solutions logistiques de classe mondiale, bénéficiant de l'expertise et du réseau étendu de Morris Transport
+      </h3>
+
+    </div>
+</div>
+</div>
+
+
+
+
+
+<div class="tableau-user2">
+  <h2>Client</h2>
+  <div class="logo-and-text2">
+    <div class="logo_page2">
+      <img src="{% static 'client1.jpg' %}" alt="logo_page"> 
+      <img src="{% static 'client2.png' %}" alt="logo_page"> 
+      <img src="{% static 'client3.jpg' %}" alt="logo_page"> 
+      <img src="{% static 'client4.png' %}" alt="logo_page"> 
+      <img src="{% static 'client5.jpg' %}" alt="logo_page"> 
+      <img src="{% static 'client6.jpg' %}" alt="logo_page"> 
+      <img src="{% static 'client7.jpg' %}" alt="logo_page"> 
+    </div>
+  </div>
+</div>
+
+
+
+
+<footer class="footer-bar" id="footerBar">
+  <nav class="footer-menu">
+    <ul>
+      <li><a href="#"></a></li>
+      <!-- Ajoutez d'autres liens ici si nécessaire -->
+    </ul>
+
+    <h4>© Transport Logistics Solution</h4>
+  </nav>
+</footer>
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            window.addEventListener("wheel", function(event) {
+                if (event.deltaY > 0) {
+                    window.scrollBy(0, 100); // défilement vers le bas
+                } else {
+                    window.scrollBy(0, -100); // défilement vers le haut
+                }
+            });
+        });
+
+      
+        window.addEventListener('scroll', function() {
+            var footerBar = document.getElementById('footerBar');
+            var scrollPosition = window.scrollY + window.innerHeight;
+            var pageHeight = document.body.scrollHeight;
+
+            // Afficher la barre de pied de page lorsque la position de défilement atteint la fin de la page
+            if (scrollPosition >= pageHeight) {
+                footerBar.style.display = 'block';
+            } else {
+                footerBar.style.display = 'none';
+            }
+        });
+   
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
